@@ -1,0 +1,57 @@
+깃허브( 원격 저장소)에 코드를 저장해두어 데이터 손실이 있을 때
+문제가 없도록한다.
+
+누가 어떤 부분을 언제 수정했고, 버전관리 가능하다.
+
+//
+깃허브 가입하기
+
+Username = 닉네임
+Email address =  사용 이메일 주소
+PassWord = 비번 적어주기
+
+create Repository 저장공간 만들기
+-> Repository name : 저장공간의 이름을 적어주면 됌
+
+-> public
+-> create Repository를 눌러 원격 저장소를 만들어준다!
+
+//
+// 시작하기: git init
+// 유저 이름 설정: git config --global user.name "내 username 넣어줌"
+// 이메일 등록: git config --global user.email "#####@gmail.com"
+// 파일 추가: git add .
+// 메세지 입력: git commit -m "first commit"
+// 보낼 곳 등록: git remote add origin https://github.com/codelion-jocoding/myrepo.git
+// 보낼 곳으로 코드 전송: git push origin master
+
+
+
+//////////////
+deploy
+잘 만든 웹서비스를 다른 사람들에게 공개할 줄 알아야한다!
+
+웹 서버라는 공간에 내 코드를 올려두고 만든 사이트를 공개해야 한다 !
+
+이러한 개념을 deploy 라고 한다.
+
+netilify 사용하기 == 평생 무료로 사용할 수 있다. !
+
+
+
+//////////////
+netilify에 접속해서 git으로 로그인하기
+
+authorize netilify 하면 자동으로 계정이 연동된다 !
+==회원가입 완료
+
+웹서버 내 코드를 올려넣기
+ new site from github
+
+ github 버튼을 눌러주고 authorize -> install -> 깃 비번 입력 -> github
+
+ 내 Repository가 나오게 된다. !
+ ->deploy
+
+
+

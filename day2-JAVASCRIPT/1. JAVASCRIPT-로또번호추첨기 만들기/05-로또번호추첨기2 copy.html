@@ -1,0 +1,67 @@
+<!--
+    1~45공 중 6개 뽑기
+
+    step1. 공 6개 중에서 1개 뽑기
+        Math.random();
+        -> 0이상 1미만의 실수가 추출됌.(실수)
+
+        Math.radom * 45;
+        -> 0이상 45 미만의 실수가 추출됌.(실수)
+
+        Math.radom * 45 + 1;
+        -> 0은 제외하고 45는 포함되어야한다.(실수)
+
+        parseInt();
+        -> 소수점은 버리고 정수로 변환 (정수)
+
+        parseInt(Math.radom() * 45 + 1);
+        -> 1이상 45이하의 정수 추출 (정수)
+
+    step2. 배열 활용해 여러 값들을 저장해주기
+
+        배열을 활용
+        -> var lotto = [1,2,3,4,5. . . ];
+
+        .push()
+        -> 마지막에 값 추가하기
+
+ -->
+
+ <!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>로또 번호 추첨기 2</title>
+    </head>
+    <body>
+        <h1>로또 번호 추첨기 2</h1>
+        
+        <script>
+        //    var lotto = [1,2,3,4,5,6];
+        //    lotto.push(7);
+        //    document.write(lotto);
+
+
+        var lotto =[];
+        lotto.push((parseInt(Math.random() * 45 + 1)));
+        lotto.push((parseInt(Math.random() * 45 + 1)));
+        lotto.push((parseInt(Math.random() * 45 + 1)));
+        lotto.push((parseInt(Math.random() * 45 + 1)));
+        lotto.push((parseInt(Math.random() * 45 + 1)));
+        lotto.push((parseInt(Math.random() * 45 + 1)));
+        document.write(lotto);
+        
+
+        /* 반복문을 사용해서 코드 줄이기 
+
+            var num = [];
+            for(i=0; i<6; i++){
+                num.push(parseInt(Math.random() * 45 + 1));
+            }
+            document.write(num);
+        */
+       
+        </script>
+    
+    </body>
+</html>

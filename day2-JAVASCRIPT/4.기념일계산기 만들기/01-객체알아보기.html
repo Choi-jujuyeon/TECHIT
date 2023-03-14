@@ -1,0 +1,33 @@
+<!-- 
+    # 객체 알아보기
+        var 객체 = {
+            속성명 : '속성값',
+            키 : 값,
+        }
+
+        -> 이때 속성값에는 배열,객체, 메서드(함수)가 들어갈 수 있다.
+        -> 객체.키 로 값을 추출할 수 있다.
+
+ -->
+
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>객체(Object)</title>
+</head>
+<body>
+    <h1>객체(Object)</h1>
+    <script>
+        var person = {
+            name : '최주연',
+            age : 23,
+            sayHello : function(){
+                console.log('hello');
+            }
+        }
+        console.log(person.name);
+        
+    </script>
+</body>
+</html>

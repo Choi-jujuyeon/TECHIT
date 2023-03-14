@@ -1,0 +1,123 @@
+/* 내용은 google에서 불러오기 ! */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+  font-family: 'Montserrat';
+}
+
+/*font 마다 설정값이 조금씩 다를 수 있음으로 초기화를 해줘야한다!*/
+body,h1,h2 {
+  margin: 0px;
+  padding: 0px;
+}
+/* body {
+  min-width: fit-content;
+} */
+
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #282828;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 5px;
+  margin-bottom: 16px;
+}
+
+.name-text {
+  font-size: 16px;
+  color: #7c7c7c;
+  font-weight: bold;
+}
+
+.about-me-text {
+  font-size: 10px;
+
+  /* 줄간 간격을 설정하는 것 */
+  line-height: 16px;    
+}
+
+.title-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  /* float 다른 폰트나 이미지와 겹칠 수 있는 위험성이 존재한다! */
+  float: left;
+}
+
+.year-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  float: right;
+}
+
+
+
+.main-box {
+/*border: 두께 방식 색깔 */
+  border: 1px solid #ebebeb;
+/* border-style: 위 오 아래 왼 */
+  border-style: dotted dotted none dotted;
+  width: 610px;
+
+  /* 박스가 문서 가운데 위치하도록 해준다 == 박스 중앙 정렬*/
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* 근데 너무 박스에 바짝 붙어서 조금 떨어지게 만들자 ! */
+  padding: 30px;
+  /* 전체 화면에서 박스가 얼마나 떨어져야 하는지 조정해줌*/
+  margin: 30px;
+
+/* 가로축(x축)  y축 블러값 퍼짐도 rgb투명도*/
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+
+}
+
+footer {
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #919191; 
+  font-size: 12px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+
+.float-wrap {
+  /* 다른 요소와 겹치지 않도록 해준다 */
+  overflow: hidden;
+}
+
+.desc-text {
+  font-size: 9px;
+}
+
+.desc-subtext {
+  font-size: 9px;
+  color: #282828;
+  padding-left: 16px;
+}
+
+.title-box {
+  text-align: right;
+}
+
+.sns-img {
+  width: 12px;
+  height: 12px;
+}
+
+.sns-wrap {
+  text-align: right;
+}

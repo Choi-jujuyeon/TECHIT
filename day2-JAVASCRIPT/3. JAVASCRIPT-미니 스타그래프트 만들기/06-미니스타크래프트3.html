@@ -1,0 +1,85 @@
+
+<!-- 
+    # 스타그래프트 만들기
+        ->드론을 클릭했을 때 침이 발사되고, 벙커가 파괴되도록 만들어보자!
+
+    step1. 이미지 배치하기하고 간단한 콘솔이벤트 실행해보기
+
+    step2. 드론을 클릭했을 때 침이 나가도록 기능 추가
+        구글링해서 기능 찾아보기
+        -> .fadeIn()    
+
+    step3. 침을 발사해 목표물까지 가도록 설정하기
+        .animate(properties,[duration],[easing],[complete] )
+
+-->
+
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+
+    <title>미니스타크래프트 3 </title>
+    <style>
+        .background {
+            position: relative;
+            background-image: url('배경.jpg');
+            background-size: 500px 330px;
+            width: 500px;
+            height: 330px;
+        }
+        #drone {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 100px;
+            left: 10px;
+        }
+        #bunker {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 80px;
+            right: 20px;
+        }
+        #spit {
+            display: none;
+            position: absolute;
+            top: 140px;
+            left: 150px;
+            width: 50px;
+            height: 30px;
+            z-index: 2;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class='background'>
+        <img id='drone' src="메리다.png" alt="drone">
+        <img id='spit' src="화살.png" alt="spit">
+        <img id='bunker' src="악당용.png" alt="bunker">
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('#drone').click(function(){
+            
+            // 화살이 나타나도록 설정
+            $('#spit').fadeIn()
+
+            //침이 목표물까지 이동하도록 설정
+            $('#spit').animate({left: '+=250'});
+
+        });
+    </script>
+
+
+</body>
+</html>

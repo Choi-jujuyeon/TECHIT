@@ -1,0 +1,1 @@
+document.write('광기의 휴학생활!');

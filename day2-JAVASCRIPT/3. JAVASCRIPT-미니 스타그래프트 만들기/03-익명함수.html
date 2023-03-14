@@ -1,0 +1,60 @@
+
+<!-- 
+    # JQuery Event
+        JQuery 란 ?
+        -> 자바스크립트를 쉽게 사용할 수 있도록 해주는 라이브러리
+
+        JQuery 장점 !
+        1. 간결한 문법
+        2. 편리한 API
+        3. 크로스 브라우징
+            (= 모든 브라우저, 버전에서 동일한 기능으로 동작함.)
+
+        JQuery 사용방법 
+        -> JQuery 코드를 복사해 내 html상에 붙이면
+            인터넷 상에 있는 JQuery 라이브러리를 사용할 수 있다.
+
+        JQuery 문법
+        -> $(선택자).행위
+
+    
+    #JQuery Event
+        기존의 자바스크립트Event -> JQueryEvent로 변경하기
+        -> $('#click').click('hello');
+
+
+    #익명함수
+        익명함수란?
+        -> 이름이 없는 함수
+
+        함수를 정의하고 호출하는 기존의 방식과 달리
+        정의하지 않고 바로 호출하는 형태를 의미한다.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang=ko">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>익명함수</h1>
+    <!-- <button id="click" onclick="hello();">클릭</button> -->
+    <button id="click">클릭</button>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('#click').click(function(){
+            console.log('hello')
+        });
+    </script>
+
+
+</body>
+</html>

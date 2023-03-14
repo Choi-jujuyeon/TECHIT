@@ -1,0 +1,38 @@
+<!--
+    1~45공 중 6개 뽑기
+
+    step1. 공 6개 중에서 1개 뽑기
+        Math.random();
+        -> 0이상 1미만의 실수가 추출됌.(실수)
+
+        Math.radom * 45;
+        -> 0이상 45 미만의 실수가 추출됌.(실수)
+
+        Math.radom * 45 + 1;
+        -> 0은 제외하고 45는 포함되어야한다.(실수)
+
+        parseInt();
+        -> 소수점은 버리고 정수로 변환 (정수)
+
+        parseInt(Math.radom() * 45 + 1);
+        -> 1이상 45이하의 정수 추출 (정수)
+
+ -->
+
+ <!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>로또 번호 추첨기 1</title>
+    </head>
+    <body>
+        <h1>로또 번호 추첨기 1</h1>
+        
+        <script>
+            var num = Math.random() * 45 + 1;
+            var ball1 = parseInt(num);
+            document.write(ball1);
+        </script>
+    
+    </body>
+</html>

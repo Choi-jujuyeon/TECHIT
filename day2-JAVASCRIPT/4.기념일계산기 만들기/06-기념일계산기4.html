@@ -1,0 +1,192 @@
+<!-- 
+    # 기념일 계산기 만들기
+
+    step1. 커플이 사귄지 몇일이 되었는지 체크하기
+       특정일부터 ~~~ 현재까지의 시간을 밀리세컨드로 계산
+       -> 현재.getTime()
+
+       특정일부터 ~~~ 사귄날
+       -> 사귄날.getTime()
+
+       사귄날부터 ~~~ 현재까지 == 만난 밀리 초
+       -> 현재.getTime - 사귄날.getTime()
+
+       만난일
+       -> 만난 밀리초를 일로 환산하면 됌.
+    
+    step2. 기념일까지 몇일 남았는지 체크하기
+        남은 밀리초 = 기념일.getTime() - 오늘.getTime()
+        만난 일 = 만난 밀리초를 일로 환산
+
+    step3. 사귄날부터 ~~~ 천일째 되는 날은 언제인가?
+        1000일의 밀리초 = 사귄날.getTime() + 999일의.getTime()
+        1000일 = new Data(1000일의 밀리초)
+    
+    step4. 오늘부터 1000일까지 얼마나 남았을까 !?
+        D-1000?일의 밀리초 = 1000일.getTime - 현재.getTime()
+        구한 D-1000?(밀리초) 날짜로로 변환하기
+ -->
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <title>기념일 계산기 4</title>
+     <style>
+         * {
+             color: #333333;
+         }
+         p {
+             margin-bottom: 1px;
+         }
+         .photos {
+             margin-top: 50px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         #duhee {
+             width:150px;
+             height:220px;
+             object-fit:cover;
+             border-radius:10%;
+             margin-right: 30px;
+         }
+         #jisook {
+             width:200px;
+             height:220px;
+             object-fit:cover;
+             border-radius:10%;
+             margin-left: 30px;
+         }
+         #heart {
+             width:50px;
+             height:50px;
+         }
+         .gray {
+             color: #a0a0a0;
+         }
+         .special-day {
+             display: flex;
+             justify-content: space-between;
+         }
+         .title {
+             display: flex;
+             align-items: center;
+         }
+         .days-left {
+             text-align: right;
+         }
+         .date {
+             text-align: right;
+             color: #a0a0a0;
+         }
+     </style>
+ </head>
+ <body class="container">
+        <section class='photos'>
+             <img id='duhee' src="뽀롱.png" alt="duhee">
+            <img id='heart' src="하트.jpg" alt="heart">
+            <img id='jisook' src="크롱.png" alt="jisook">
+        </section>
+
+        <div class='container d-flex flex-column justify-content-center align-items-center mt-3'>
+             <h3>뽀롱 ♥ 크롬</h3>
+            <h3 id='love'>0일째</h3>
+          <h4 class="date">2001. 01. 10</h4>
+        </div>
+
+        <hr/>
+
+        <section class='special-day'>
+            <h3 class='title'>크리스마스</h3>
+            <div class='date-box'>
+                <p id='christmas' class='days-left'>0일 남음</p>
+                <p class='date'>2023. 12. 25</p>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section class='special-day'>
+            <h3 class='title'>사귄 날로부터 1000일</h3>
+            <div class='date-box'>
+                <p id='thousand' class='days-left'>0일 남음</p>
+                <p id='thousand-date' class='date'>0000.00.00</p>
+            </div>
+        </section>
+        
+        <hr/>
+
+        <section class='special-day'>
+            <h3 class='title'>오늘부터 1000일</h3>
+            <div class='date-box'>
+                <p id='Dthousand' class='days-left'>0일 남음</p>
+                <p id='thousand-date' class='date'>0000.00.00</p>
+            </div>
+        </section>
+
+
+        <script
+         src="https://code.jquery.com/jquery-3.5.1.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous">
+        </script>
+         
+        <script>
+            //현재 시간을 기준으로 객체가 생성
+            var now = new Date();
+
+            //사귄 날을 기준으로 객체 생성
+            var start = new Date('2001-01-10');
+
+            //만난기간(ms) = 현재까지(ms) - 사귄날부터(ms)
+            var timeDiff = now.getTime() - start.getTime();
+            
+            /*
+                계산부분: 밀리초 * 60초 * 60분 * 24시간 + 사귄날부터1일
+                Math.floor() : day가 실수로 표현됨으로 소수점 날려주기 위해서 사용
+            */
+            var day = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);
+            $('#love').text(day + '일째');
+        </script>
+        
+        <script>
+            //크리스마스 기념일 객체 생성
+            var christmas = new Date('2023-12-25');
+
+            //현재로부터 크리스마스까지 남은 시간 계산
+            var timeDiff2 = christmas.getTime() - now.getTime();
+            var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 *24)+1);
+            $('#christmas').text(day2 + '일 남음');
+        
+        </script>
+
+        <script>
+            //시작날(ms)의 객체 생성
+            var ms = start.getTime() + 999 * (1000 * 60 * 60 *24);
+
+            //1000일 객체 생성
+            var thousand = new Date(ms);
+
+            //1000일의 날짜 = 객체의 년 + 월 + 일
+            var thousandDate = thousand.getFullYear() + '.' + (thousand.getMonth()+1) + '.' + thousand.getDate();
+            $('#thousand-date').text(thousandDate);
+        </script>
+
+        <script>
+            //지금부터 ~~~1000일까지 남은 ms 계산
+            var timeDiff3 = thousand.getTime() - now.getTime();
+
+            //남은 날짜를 구함
+            var day3 = Math.floor(timeDiff3 / (1000 * 60 * 60 * 24) + 1);
+            $('#Dthousand').text(day3 + '일 남음');
+
+
+        </script>
+
+        
+
+ </body>
+ </html>

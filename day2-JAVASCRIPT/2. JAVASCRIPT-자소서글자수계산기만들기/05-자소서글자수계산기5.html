@@ -1,0 +1,71 @@
+<!-- 
+    # 자소서 글자수 계산기 
+    => DOM을 활용해보자 !
+        :DOM이란 웹 화면을 구성하는 html 코드를 쉽게 접근할 수 있도록 만든 모델이다!
+
+    step1. DOM에 접근해 textarea안의 문장열 추출
+        documet
+        -> DOM의 진입점 역할을 한다.
+        -> document.getElementById().value
+        -> document.getElementById().innerHTML;
+
+        console.log('');
+        -> 콘솔창에서 값 확인하기
+
+    step2. 문자열의 길이 추출
+        .length
+       
+    step3. 원하는 형태로 추출한 문자열의 길이 적어넣기
+        '('+ content.length +'/200)'
+ 
+    stpe4. 함수를 활용해 명령어 묶기 -> 호출 시 간편함.
+        함수
+        -> function 함수이름() {명령어1, 명령어 2 ..};
+
+    step5. 글자수를 쓸 때마다 자동으로 글자 수를 세도록 설정
+            (=키보드를 누를 때 마다 글자수 세어져야 함!)
+        
+        이벤트
+        -> 사건을 의미함.
+
+        이벤트 핸들링
+        -> 이벤트가 발생했을 때 어떤 행동이 따르게 되는 것.
+
+        <textarea 이벤트=이벤트핸들링></textarea>
+        
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자소서 글자수 계산기 5</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        h1 {
+            margin-top: 30px;
+        }
+        #count {
+            float: right;
+        }
+    </style>
+</head>
+
+<body clas="container">
+    <h1>자기소개</h1>
+    <textarea onkeydown='counter();' class="form-control" id="jasoseol" rows="3">
+        저는 인성 문제가 없습니다.
+    </textarea>
+    <span id = "count">(0/200)</span>
+    <script>
+
+        function counter() {
+            var content = document.getElementById('jasoseol').value;
+            document.getElementById('count').innerHTML = '(' + content.length + '/200)'; 
+        };
+        counter();
+
+    </script>
+</body>
+</html>

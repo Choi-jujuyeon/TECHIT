@@ -1,0 +1,65 @@
+<!--
+    # 1~45공 중 6개 뽑기
+
+    step1. 공 6개 중에서 1개 뽑기
+        Math.random();
+        -> 0이상 1미만의 실수가 추출됌.(실수)
+
+        Math.radom * 45;
+        -> 0이상 45 미만의 실수가 추출됌.(실수)
+
+        Math.radom * 45 + 1;
+        -> 0은 제외하고 45는 포함되어야한다.(실수)
+
+        parseInt();
+        -> 소수점은 버리고 정수로 변환 (정수)
+
+        parseInt(Math.radom() * 45 + 1);
+        -> 1이상 45이하의 정수 추출 (정수)
+
+    step2. 배열에 랜덤으로 추출한 값 저장하기
+        배열을 활용
+        -> var lotto = [1,2,3,4,5. . . ];
+
+        .push()
+        -> 마지막에 값 추가하기
+    
+    step3. 반복문 활용 (..지난시간에 이미 해결함..!)
+        for(시작; 끝; 증가){반복하려는 코드 넣기}
+
+    step4. 조건문 사용해 하나의 배열에 중복된 값 제외하기
+         if(조건문) {
+            참일경우
+         }
+         -> .indexOf(값) : 해당 값이 있으면 위치, 없으면 -1
+
+
+
+ -->
+
+ <!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>로또 번호 추첨기 4</title>
+    </head>
+    <body>
+        <h1>로또 번호 추첨기 4</h1>
+        
+        <script>
+        
+            var lotto = [];
+            for(var i = 0; i < 6; i++){
+                var num = parseInt(Math.random() * 45 + 1);
+
+                //임의로 뽑는 값(=num)이 로또 안에 들어있는 값이냐 ?
+                if (lotto.indexOf(num)== -1) {
+                    lotto.push(num);
+                }
+
+            }
+            document.write(lotto);
+
+        </script>
+    </body>
+</html>

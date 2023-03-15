@@ -10,10 +10,20 @@ step2. 맥 사용자라면 다음 코드 실행
 
 step3. 'git init' 작성
 
-        ***유의사항 *** 모든 git 파일에는 꼭 있다. 
+        *** 모든 git 파일 유의사항 *** 
         README.md : 프로젝트에 대한 소개 페이지이다.
         .gitignore : github에 업로드되면 안되는 파일들을 작성하는 페이지이다.
                  ( ex.대용량 dependency 패키지들, 실행파일들, private key 등 )
 
-step4. git add .
+step4. git add . 작성
 
+step5. git commit -m "first commit" 작성 
+
+step6. git branch -M main 작성
+    -> 프로젝트 관리시 사용
+
+step7. git remote add origin [자신의 깃헙 주소]
+
+step8. git remote -v
+
+step9. git push -u origin main

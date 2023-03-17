@@ -1,0 +1,47 @@
+/*
+    flex에 엄청 많은 양을 넣으려고 하면,
+    제한된 페이지 내에 어떻게든 끼어넣으려고 한다.
+
+*/
+
+/* flex 적용시 한줄에 글이 나타난다. */
+.container {
+    display: flex;
+
+    /* 세로축으로 방향을 설정 */
+    flex-direction: column;
+
+    /* 위까지의 과정을 실습하면  box높이 만큼만 배경색이 보이는 것을 알 수 있다.*/
+    /* 모니터 기준 높이로 설정된다 */
+    min-height: 100vh;
+    background-color: black;
+
+    /* 가로 축을 기준으로 가운데 배치가 된것을 볼 수 있다. */
+    /* 
+        *  justify-content - J
+        *  align-items     - A
+        *
+        *  row     column
+        *   X        X
+        *   J        J
+        *   A        A
+        *   J, A     J, A
+        */
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+/* box 클래스로 감싸 있는 자식 속성 선택 가능 */
+.box:nth-child(1) {
+    background-color: rgb(0, 255, 255);
+}
+.box:nth-child(2) {
+    background-color: rgb(255, 0, 242);
+}
+.box:nth-child(3) {
+    background-color: rgb(0, 255, 85);
+}

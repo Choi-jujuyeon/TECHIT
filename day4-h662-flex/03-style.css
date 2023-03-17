@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 242);
+}
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
+    .box {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1024px) {
+    .box {
+        background-color: black;
+    }
+}

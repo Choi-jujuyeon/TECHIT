@@ -1,0 +1,1553 @@
+RoRA
+#0635
+
+[강사] h662 — 오늘 오후 5:20
+헤더
+스레드
+헤더
+메시지 37개 ›
+김시온
+1분 전
+﻿
+[강사] h662 — 오늘 오후 5:20
+헤더
+[강사] h662 — 오늘 오후 5:20
+여기에 헤더를 올려주세요.
+김강현 — 오늘 오후 6:08
+이미지
+이미지
+body {
+  background-color: #24376e;
+  margin: 0;
+}
+
+header {
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+
+.title {
+  width: 200px;
+}
+
+.menu {
+  display: flex;
+}
+
+.mainMenu {
+  display: flex;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  color: #dddddd;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 16px;
+  display: none;
+}
+.new {
+  background: #08164088;
+  color: #0cdeed;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  border: 0;
+  border-radius: 12px;
+}
+
+.subMenu1 {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.subMenu2 {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.screenMode {
+  padding: 0px 10px;
+  width: 30px;
+}
+
+.gitMenu {
+  padding: 0px 10px;
+  width: 20px;
+}
+
+.search {
+  padding: 0px 10px;
+  width: 20px;
+}
+
+.dot3Menu {
+  padding: 0px 10px;
+  width: 20px;
+}
+
+@media (min-width: 1024px) {
+  button {
+    display: inline-block;
+  }
+  .subMenu1 {
+    display: flex;
+  }
+  .subMenu2 {
+    display: none;
+  }
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+확장
+SPOILER_index.html
+8KB
+이정호 — 오늘 오후 6:24
+수업에선 button을 사용했지만 div를 사용하여 각 id를 부여해준다음
+각 테마를 눌렀을 때 페이지로 이동되는 기능을 구현해봤습니다.
+이미지
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+확장
+message.txt
+5KB
+안승우 — 오늘 오후 6:47
+이미지
+이미지
+첨부 파일 형식: archive
+homework.zip
+3.55 KB
+김백기 — 오늘 오후 7:54
+body {
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 850px;
+}
+
+header {
+  background-color: #160a29;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.logo-name :nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  /* letter-spacing: 2px; */
+}
+
+.logo-name :nth-child(2) {
+  font-size: 11px;
+  font-style: italic;
+  position: relative;
+  bottom: 10px;
+  left: 2px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+}
+
+#search-bar {
+  width: 400px;
+  height: 14px;
+  background-color: #160a29;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.magnifier {
+  position: relative;
+  right: 40px;
+}
+
+.menu {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.menu a {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.wallet a {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#profile {
+  margin-right: 12px;
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 999px;
+}
+
+#wallet-connect {
+  border: 1px solid #3e76ef;
+  padding: 10px 25px;
+  background-color: #3e76ef;
+  border-radius: 10px;
+}
+
+.ellipsis {
+  width: 34px;
+  margin-left: 15px;
+}
+
+@media (max-width: 1150px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .ellipsis {
+    display: none;
+  }
+}
+이미지
+이미지
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+확장
+project.html
+4KB
+박범진 — 오늘 오후 8:12
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="hw.css" />
+  </head>
+  <body>
+    <header>
+      <button class="logo">kakao</button>
+      <div class="menu">
+        <button>카카오</button>
+        <button>뉴스</button>
+        <button>기술과 서비스</button>
+        <button>약속과 책임</button>
+      </div>
+      <div class="firstImg">
+        <img src="kakao big.PNG" alt="1" />
+      </div>
+      <div class="secondImg">
+        <img src="kakao small.PNG" alt="2" />
+      </div>
+    </header>
+  </body>
+</html>
+
+hw.css
+header {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1050px;
+  margin: auto;
+}
+
+button {
+  background-color: white;
+  color: #222222;
+  border: 0;
+  font-size: 15px;
+  font-weight: 1000;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: none;
+}
+
+.firstImg {
+  display: none;
+}
+
+.secondImg {
+  margin-right: 20px;
+}
+
+.logo {
+  font-size: 29px;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+  header {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+
+  button {
+    display: inline-block;
+  }
+
+  .firstImg {
+    display: inline-block;
+  }
+
+  .secondImg {
+    display: none;
+  }
+}
+이미지
+이미지
+이미지
+김영도 — 오늘 오후 9:06
+이미지
+이미지
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+확장
+practice.html
+2KB
+body {
+  margin: 10;
+  padding-left: 32px;
+}
+
+header {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+}
+
+img {
+  width: 102px;
+}
+
+button {
+  background-color: white;
+  border: 0;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 800;
+  padding-left: 14px;
+  padding-right: 16px;
+  display: none;
+}
+
+.mypage {
+  display: inline-block;
+  border-radius: 9999px;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.firstBtn {
+  margin-left: 70px;
+}
+
+.mypageBox {
+  display: flex;
+}
+
+.ellipsis {
+  width: 24px;
+  margin-left: 16px;
+}
+
+@media (min-width: 1024px) {
+  button {
+    display: inline-block;
+  }
+
+  .ellipsis {
+    display: none;
+  }
+
+  .mypage {
+    border: 0;
+    padding: 200;
+  }
+}
+모르는게 너무 많아서 이게 제 한계네요; 하하하; 다른분들이 너무 잘하셔서 올리기 그랬지만 그래도 제 나름대로 열심히 한거라 올려봤어요!
+김강현 — 오늘 오후 9:19
+매일 한계 찍어서 초고속 성장 가봅시드앗~~
+서창욱 — 오늘 오후 9:20
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logomenu">
+        <button class="logo">
+          <a href=https://techit.education>
+            <img src="3917074.png" alt="logo" />
+          </a>
+        </button>
+      </div>
+      <div class="buttonmenu">
+        <button>store</button>
+        <button>Muc</button>
+        <button>iPud</button>
+        <button>iPang</button>
+        <button>Wetch</button>
+        <button>Airpood</button>
+        <button>TV</button>
+        <button>enter</button>
+        <button>acce</button>
+        <button>Help</button>
+      </div>
+      <div class="backmenu">
+        <button class="back"><img src="1.png" alt="search" /></button>
+        <button class="back"><img src="2.png" alt="basket" /></button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="ellipsis"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </div>
+    </header>
+  </body>
+</html>
+이미지
+이미지
+몇시간 동안 인터넷뒤지면서 헤메다가 완성했네요 ㅠㅠ
+그래도 다하고나니 뿌듯합니다 !
+서창욱 — 오늘 오후 9:24
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: rgb(243, 242, 242);
+  padding: 8px;
+  max-width: 1280px;
+  margin: auto;
+  height: 24px;
+  justify-content: space-between;
+}
+
+.logomenu {
+  margin-left: px;
+}
+
+img {
+  width: 14px;
+}
+
+.back {
+  display: inline-block;
+}
+
+.buttonmenu {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #222222;
+  padding-left: 16px;
+  padding-right: 30px;
+}
+
+.backmenu {
+  display: flex;
+}
+
+.ellpsis {
+  width: 24px;
+  margin-left: 16px;
+}
+
+@media (min-width: 1024px) {
+  .buttonmenu {
+    display: inline-block;
+  }
+
+  .ellipsis {
+    display: none;
+  }
+}
+
+.ellpsis {
+  display: none;
+}
+김강현 — 오늘 오후 9:26
+열정에 박수..!!
+이주혁 — 오늘 오후 10:07
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img class="logo" src="logo.png"/>
+            <ul>
+                <li>Menu</li>
+                <li>Store</li>
+                <li>What's New</li>
+                <li>Story</li>
+            </ul>
+            <button style="background-color: #db0007">임차문의</button>
+            <button style="background-color:#d87e00">RECRUIT</button>
+            <button style="background-color: #264a36">ENG</button>
+            <img class="search" src="search.png">
+        </div>
+    </header>
+</body>
+</html>
+이미지
+body{
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    min-width: 1280px;
+}
+
+.logo{
+    width: 106px;
+    height: 93px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+ul {
+    list-style:none;
+    margin: 0;
+}
+
+li {
+    float: left;
+    margin-right: 85px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 140px;
+    color: #292929;
+    
+}
+
+button{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    padding-top: 2px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 48px;
+    margin-top: 50px;
+    margin-left: 3px;
+    border: 0;
+}
+
+
+
+
+.search{
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+황재윤 — 오늘 오후 10:52
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body background="1212.jpg">
+    <div class="container">
+      <header>
+        <p>테킷거래소</p>
+        <ul>
+          <li><a href="https://www.binance.com/en">home</a></li>
+          <li><a href="https://www.binance.com/en">features</a></li>
+          <li><a href="https://www.binance.com/en">contact</a></li>
+        </ul>
+      </header>
+      <section>
+        <p>테킷거래소</p>
+        <p>구매하시고 밑에 클릭해 주시면 감사하겠습니다^^</p>
+        <a href="https://www.youtube.com/watch?v=7j31oE2Ctmg">
+          <p>코인구매하기</p>
+        </a>
+      </section>
+      <footer>코인팝니다 코인 나중에 떡상간다</footer>
+    </div>
+  </body>
+</html>
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  width: 100%;
+}
+
+header > p {
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+header > ul {
+  display: flex;
+}
+
+header > ul > li {
+  list-style-type: none;
+  margin-left: 14px;
+}
+
+header > ul > li > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+header > li > a:hover {
+  border-bottom: 5px solid pink;
+}
+
+section {
+  text-align: center;
+}
+
+section > p {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+section > a {
+  display: block;
+  border: 1px solid black;
+  width: 150px;
+  font-size: 16px;
+  margin: auto;
+  text-decoration: none;
+}
+
+footer {
+  font-size: 30px;
+  margin-bottom: 250px;
+  margin-left: 80px;
+  color: rgb(252, 9, 9);
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+보안점 -> 
+1.좌측 상단에 "테킷 거래소"이미지 넣기
+ 
+2. 우측상단에 밋밋한 클릭부분 보더 넣고 라운드 넣고 입체적이게 살리기
+ 
+3. 가운데 버튼 위와 같이 살리기
+ 
+더 시도해 볼 것-> 우측 상단에 버튼 옆에 이미지 버튼 넣어보기
+ 
+이미지
+이주용 — 오늘 오후 10:58
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="SR-logo-black2.png" alt="logo" />
+        <button class="firstBtn">채용공고</button>
+        <button>대외활동/공모전</button>
+        <button>기업탐색</button>
+        <button>콘텐츠</button>
+        <button>커리어교육</button>
+      </div>
+      <div class="loginBox">
+        <img class="icon" src="free-icon-font-search-3917132.png" alt="icon" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="ellipsis"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+        <button class="a">기업용</button>
+        <button class="b">로그인</button>
+      </div>
+    </header>
+  </body>
+</html>
+이미지
+body {
+  margin: 0px;
+}
+img {
+  width: 177px;
+}
+
+header {
+  padding: 28px;
+  display: flex;
+  max-width: 1160px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: 0px;
+  background-color: white;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 27px;
+  display: none;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.firstBtn {
+  margin-left: 40px;
+}
+
+.login {
+  display: inline-block;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.loginBox {
+  display: flex;
+  align-items: center;
+}
+
+.a {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 9999px;
+  font-size: 12.6px;
+  padding: 8px 16px;
+  margin-left: 13px;
+  display: none;
+}
+
+.b {
+  display: inline-block;
+  border: 1px solid #1abc9c;
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 9999px;
+  font-size: 12.6px;
+  padding: 8px 16px;
+  margin-right: 19px;
+  margin-left: 18px;
+  display: none;
+}
+
+.ellipsis {
+  width: 32px;
+  margin-left: 6px;
+}
+
+@media (min-width: 1000px) {
+  button {
+    display: inline-block;
+  }
+  .ellipsis {
+    display: none;
+  }
+
+  .a {
+    display: inline-block;
+  }
+
+  .b {
+    display: inline-block;
+  }
+}
+박석훈 — 오늘 오후 11:00
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타래타래</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="box1">
+        <img class="logo" src="yarn.png" alt="logo" />
+      </div>
+
+      <div class="hiddenDiv">
+        <button class="hiddenButton">HOME</button>
+        <button class="hiddenButton">WHITE PAPER</button>
+        <button class="hiddenButton">STORY</button>
+        <button class="hiddenButton">SYL CARDS</button>
+        <button class="hiddenButton">MILESTONE</button>
+        <button class="hiddenButton">FAQ</button>
+        <button class="hiddenButton">LINKS</button>
+        <div id="kkk" class="hiddenButton">
+          <div class="earthDiv">
+            <img class="earth" src="planet-earth.png" alt="earth" />
+          </div>
+          <div class="ko">ko</div>
+        </div>
+      </div>
+
+      <div class="box2">
+        <button class="button">INFO</button>
+        <button class="button">GUIDE</button>
+        <div id="button3" class="button" ,>
+          <div class="buttonLogoDiv">
+            <img class="buttonLogo" src="yarn.png" alt="logo" />
+          </div>
+          <div class="playNow">PLAY NOW</div>
+        </div>
+      </div>
+      <div class="box3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="ellipsis"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
+.logo {
+  width: 30px;
+}
+.buttonLogo {
+  width: 10px;
+}
+
+.playNow {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.buttonLogoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+}
+
+.box2 {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box3 {
+  display: flex;
+  align-items: center;
+}
+
+.ellipsis {
+  width: 28px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.button {
+  font-size: 12px;
+  border: 0.5px solid red;
+  border-radius: 6px;
+  background-color: white;
+  padding: 8px;
+  font-weight: 600;
+  color: red;
+  margin-left: 10px;
+}
+#button3 {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  border: 0.5px solid red;
+  border-radius: 6px;
+  padding: 8px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hiddenDiv {
+  display: flex;
+  justify-content: end;
+}
+
+.earth {
+  width: 25px;
+}
+
+.hiddenButton {
+  border: none;
+  background-color: transparent;
+  color: #969696;
+  margin: 0px 5px;
+}
+
+#kkk {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 6px;
+}
+
+.earthDiv {
+  display: flex;
+}
+
+.ko {
+  font-size: 13px;
+  padding-left: 3px;
+}
+
+.hiddenDiv {
+  width: 100vw;
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .ellipsis {
+    display: none;
+  }
+
+  .hiddenDiv {
+    display: flex;
+  }
+
+  .box2 {
+    width: min-content;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  #button3 {
+    white-space: nowrap;
+  }
+}
+이미지
+이미지
+서재민 — 오늘 오후 11:01
+ HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../day2/header.css">
+</head>
+<body>
+    <header>
+    <div class="title">
+        <img class="titleImg" src="../day2/Tailwind_CSS_Logo.svg.png" alt="logo">
+        <span class="titleFont">tailwindcss</span>
+    </div>
+
+    <div>
+        <li class="list">
+            <a href="#"><ol>Docs</ol></a>
+            <a href="#"><ol>Components</ol></a>
+            <a href="#"><ol>Blog</ol></a>
+            <a href="#"><ol>Showcase <span class="new">New</span> </ol></a>
+            <ol class="centervar">|</ol>
+            <a href="#"><ol><img class="subImg" src="../day2/6559240.png" alt=""></ol></a>
+            <a href="#"><ol><img class='subImg' src="../day2/2111612.png" alt=""></ol></a>
+            
+        </li>
+    </div>
+    </header>
+    <div class="minsub"> 
+        <span><img class="subImg1" src="../day2/pngwing.com.png" alt="logo"> </span>
+        <span><img class="subImg1" src="../day2/pngwing.com (1).png" alt="logo"></span>
+    </div>
+</body>
+</html>
+CSS
+body{
+    padding: 15px;
+    background-color: rgb(10, 17, 32);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px; 
+    margin: auto;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.titleFont{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #e2e8ef;;
+}
+
+.titleImg{
+    height: 40px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+.new{
+    border: 0px solid ;
+    background-color: rgb(18, 34, 55);
+    color:  rgb(50, 176, 231);
+    border-radius: 7px;
+    padding: 1px 2px ;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #e2e8ef;
+    opacity: 0.5;
+    }
+
+.centervar{
+    margin-left: -20px; 
+    margin-right: 15px; 
+    color: gray;
+    opacity: 0.5;
+}
+
+.subImg{
+    margin-left: -30px;
+    align-items: center;
+    height: 20px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #f7fafd);
+}
+
+.minsub{
+    position: relative;
+    top: -43px;
+    float: right;
+    display: none;
+}
+.subImg1{
+    height: 20px;
+    padding: 10px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #f7fafd);
+    
+
+}
+
+@media(max-width:1024px){
+    .list{
+        display: none;
+    }
+    .minsub{
+        display: block;
+    }
+    
+}
+김강현 — 오늘 오후 11:02
+:jjang:
+서재민 — 오늘 오후 11:03
+이미지
+이미지
+작은화면은 그냥 포지션 넣어서 구현했고
+테킷은 li태그랑 span태그로 사용했길래 연습삼아 저도 ol태그에 라인 논으로 주고 했슴다!! 
+ 
+ 
+권세명 — 오늘 오후 11:30
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Like Apple</title>
+    <link rel="stylesheet" href="apple.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img class="apple_logo" src="apple_logo.png" alt="apple_logo" />
+        <button>스토어</button>
+        <button>Mac</button>
+        <button>iPad</button>
+        <button>iPhone</button>
+        <button>Watch</button>
+        <button>AirPods</button>
+        <button>TV 및 홈</button>
+        <button>엔터테인먼트</button>
+        <button>액세서리</button>
+        <button>고객지원</button>
+        <div class="right">
+          <img
+            class="magnifier_logo"
+            src="magnifier.png"
+            alt="magnifier_logo"
+          />
+          <img class="bag_logo" src="bag.png" alt="bag_logo" />
+          <img class="equal_logo" src="equal.png" alt="equal_logo" />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgba(244, 244, 244, 0.879);
+  height: 44px;
+}
+
+img {
+  width: 16px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+button {
+  background-color: transparent;
+  font-size: 11px;
+  padding: 0 9px;
+  border: 0;
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 22px 0 22px;
+  margin: 0 82.5px;
+}
+
+.right {
+  display: flex;
+}
+
+@media (min-width: 900px) {
+  button {
+    display: inline-block;
+  }
+
+  .equal_logo {
+    display: none;
+  }
+}
+마음에 안들지만.. 제출합니다!
+이미지
+이미지
+김시온 — 오늘 오후 11:36
+이미지
+이미지
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>spotify clone</title>
+    <link rel="stylesheet" href="spotify.css" />
+    <script
+      src="https://kit.fontawesome.com/2c827c8cca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="spotify.png" width="132px" />
+      </div>
+      <div class="flex_header_Left">
+        <button>Premium</button>
+        <button>Support</button>
+        <button>Download</button>
+        <span> | </span>
+        <button>Sign Up</button>
+        <button>Log in</button>
+      <div class="menuBTN">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="hamburger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </div>
+    </header>
+  </body>
+</html>
+body {
+  margin: 0px;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+header {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button {
+  background-color: transparent;
+  border: 0px;
+  font-weight: 700;
+  padding-left: 17px;
+  padding-right: 17px;
+  color: white;
+  font-size: 16px;
+  display: none;
+}
+
+span {
+  display: none;
+}
+
+.flex_header_Left {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 1024px) {
+  button,
+  span {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techit school</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="left-elements">
+        <img class="techit-logo" src="techit_logo.svg" alt="" />
+
+        <div id="tekit-school">테킷 스쿨</div>
+        <div id="startup">스타트업 스테이션</div>
+        <div id="vod">VOD 클래스</div>
+        <div id="education">기업교육</div>
+        <div id="event">이벤트</div>
+      </div>
+      <div class="right-box">
+        <div class="myhome">내 강의실</div>
+        <img class="user-logo" src="icon_user.svg" alt="" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="ellipsis"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <img class="picture" src="techit.png" alt="" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 108px;
+        height: 50px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        padding-left: 110px;
+        font-size: 14px;
+        font-weight: bold;
+        max-width: 1280px;
+      }
+      div {
+        padding: 10px;
+        display: none;
+      }
+
+      .right-box {
+        display: flex;
+        align-items: center;
+        padding-right: 50px;
+      }
+
+      .left-elements {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .techit-logo {
+        padding-right: 50px;
+        cursor: pointer;
+      }
+
+      .user-logo {
+        width: auto;
+        height: auto;
+        padding-left: 15px;
+        display: none;
+      }
+
+      #tekit-school,
+      #startup,
+      #vod,
+      #education,
+      #event {
+        cursor: pointer;
+      }
+
+      .ellipsis {
+        width: 24px;
+        padding-left: 20px;
+      }
+
+      @media (min-width: 1024px) {
+        div {
+          display: inline-block;
+        }
+        .user-logo {
+          display: inline-block;
+        }
+      }
+
+      .picture {
+        width: 100%;
+        height: 300px;
+      }
+    </style>
+    <script>
+      const tekitSchoolDiv = document.getElementById("tekit-school"); // get the Tekit School div element
+
+      tekitSchoolDiv.addEventListener("click", () => {
+        window.location.href = "https://techit.education/school"; // set the URL of the Naver page you want to redirect to
+      });
+
+      const startupDiv = document.getElementById("startup"); // get the Tekit School div element
+
+      startupDiv.addEventListener("click", () => {
+        window.location.href =
+          "https://techit.education/school/kdt-startup-6th"; // set the URL of the Naver page you want to redirect to
+      });
+
+      const vodDiv = document.getElementById("vod"); // get the Tekit School div element
+
+      vodDiv.addEventListener("click", () => {
+        window.location.href = "https://techit.education/classes"; // set the URL of the Naver page you want to redirect to
+      });
+
+      const educationDiv = document.getElementById("education"); // get the Tekit School div element
+
+      educationDiv.addEventListener("click", () => {
+        window.location.href = "https://techit.education/enterprise"; // set the URL of the Naver page you want to redirect to
+      });
+
+      const eventDiv = document.getElementById("event"); // get the Tekit School div element
+
+      eventDiv.addEventListener("click", () => {
+        window.location.href = "https://techit.education/event"; // set the URL of the Naver page you want to redirect to
+      });
+
+      const logo = document.querySelector(".techit-logo"); // get the Tekit School div element
+
+      logo.addEventListener("click", () => {
+        window.location.href = "https://techit.education/"; // set the URL of the Naver page you want to redirect to
+      });
+    </script>
+  </body>
+</html>
+message.txt
+5KB

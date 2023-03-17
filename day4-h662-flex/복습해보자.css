@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Brush+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Brush+Script&family=Teko:wght@500&display=swap");
+button {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: white;
+    padding: 10px;
+    margin: 20px 20px;
+
+    border: 20px;
+    border-bottom: 3px solid rgba(132, 228, 140, 0.685);
+
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: "Teko";
+}
+
+h1 {
+    /* font-weight: ; */
+    text-align: center;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 105px;
+    text-align: center;
+    letter-spacing: -12px;
+    font-family: "Climate Crisis";
+}
+
+h1 span:nth-child(1) {
+    color: #4285f4;
+    width: 45px;
+    height: 105px;
+}
+h1 span:nth-child(2) {
+    color: #ea4335;
+    width: 45px;
+    height: 105px;
+}
+h1 span:nth-child(3) {
+    color: #fcc629;
+
+    width: 45px;
+    height: 105px;
+}
+h1 span:nth-child(4) {
+    color: #4285f4;
+    width: 51px;
+    height: 105px;
+}
+h1 span:nth-child(5) {
+    color: #34a853;
+    width: 25px;
+    height: 105px;
+}
+h1 span:nth-child(6) {
+    color: #ea5935;
+    width: 40px;
+    height: 105px;
+    left: 683px;
+    top: 232px;
+}
+input {
+    display: block;
+    margin: 0 auto;
+
+    position: absolute;
+    width: 400px;
+    height: 46px;
+    right: 300px;
+    top: 30px;
+
+    background: #ffffff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 26px;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+.button-box button:nth-child(1) {
+    width: 111px;
+    height: 36px;
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+@media (min-width: 1000px) {
+    button {
+        display: inline-block;
+    }
+    .img {
+        display: inline-block;
+    }
+}
+
+img {
+    width: 108px;
+}

@@ -1,0 +1,26 @@
+img {
+    width: 108px;
+}
+
+button {
+    background-color: white;
+    border: 0;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.login {
+    color: #737373;
+}
+
+header {
+    padding: 24px;
+    margin-left: 144px;
+    margin-right: 144px;
+    display: flex;
+}
+.firstBtn {
+    margin-left: 80px;
+}

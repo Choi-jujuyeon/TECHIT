@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    /* 이렇게만 설정하면 body의 margin 떄문에 모두 색이 안입혀진다    
+        background-color: white;
+    
+        ==> 그래서 body의 margin을 설정해줘야함.
+    */
+
+    /* 화면에 4개의 열을 나눈것이다 */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* vh는 화면의 비율을 의미한다 */
+    height: 100vh;
+
+    /* 화면을 크게 행(가로)으로 3등분 했다고 생각하면 됌 */
+    grid-template-rows: 100px auto 100px;
+}
+
+div {
+    background-color: aqua;
+}
+
+/* 각각의 태그에 스타일 적용해 구조 체크해보기 
+    
+    ->grid 작업을 할 때 주의할점!
+        : 위에서부터 아래로 순서대로 적용해주며 헷가리지 않을 수 있다.
+
+    
+*/
+.header {
+    background-color: black;
+    grid-column: 1 / 5;
+    /* grid-column: 1 / -1; */
+    grid-row: 1/2;
+}
+.nav {
+    background-color: rgb(255, 0, 212);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.content {
+    background-color: greenyellow;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.footer {
+    background-color: rgb(28, 32, 255);
+    grid-column: 1/5;
+    grid-row: 3/4;
+}

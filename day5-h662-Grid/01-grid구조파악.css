@@ -1,0 +1,92 @@
+/* 부모에게 스타일을 적용하게 되면 자식 모두에게 동일한 스타일이 적용됌 */
+.container {
+    display: grid;
+
+    /* grid는 박스와 박스사이에 gab을 줄 수 있다. */
+    /*
+        gap자체에는 색깔을 먹일 수 없다
+        => width와 height 설정으로 특정 부분 gap 배경색 속이기 가능
+        => container에 색 입히면 속일 수 있음
+    */
+    gap: 20px;
+
+    /* grid의 각 열(세로)에 적용 되는 스타일*/
+    /* grid-template-columns: 200px 200px 200px 200px; */
+
+    /* grid 의 각행(가로)에 적용되는 스타일 */
+    /* grid-template-rows: 200px 200px 200px 200px 200px; */
+
+    /* 박스의 수가 무한정으로 늘어날 경우 스타일을 각각 설정하기 어려움
+        ==> 이럴때 reapeat() 사용하기 !!!
+        
+        reapeat( 전체 가로 페이지를 몇 개의 박스로 나눌지, 1fr의 비율로)    
+    */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+    background-color: aqua;
+
+    /* 박스의 높이는 고정값으로 저장해하자 */
+    height: 200px;
+}
+
+/* 
+    미디워 쿼리(@media)를 사용해
+    화면사이즈 변경 시 보이는 박스의 수를 조정해보자!
+    사이즈별로 박스 크기를 변경해보자!
+
+    조건을 사용해 조건 만족시 스타일 적용이 가능하다.
+    @media (조건) {
+         스타일
+    }
+
+    responsive design 
+    => https://tailwindcss.com/docs/responsive-design
+*/
+
+/*  화면 너비에 따라 보이는 박스 갯수를 조정해보자!
+
+max-width와 min-width의 차이 
+    => max-width
+        : 최소한의 너비를 설정할 수 있다.
+    => min-width
+        : 최대의 너비를 설정할 수 있다
+
+    ==> 즉 화면 너비와 상관 없이 최대 최소의 너비가 설정되는 것이다.
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repear(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+*/
+@media (min-width: 640px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

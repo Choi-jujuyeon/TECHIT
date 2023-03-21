@@ -1,0 +1,24 @@
+@import "button";
+// .info {
+//     @include btnStyle;
+// }
+// .alert {
+//     @include btnStyle($color: darkred);
+// }
+// .success {
+//     @include btnStyle($color: darkgreen);
+// }
+
+.info {
+    @extend %btnStyle;
+    background-color: darkslategray;
+}
+.alert {
+    @extend %btnStyle;
+    background-color: darkred;
+}
+
+.success {
+    @extend %btnStyle;
+    background-color: darkgreen;
+}

@@ -1,0 +1,6 @@
+정보 get
+
+=> the blocksize war
+
+
+https://royalforkblog.github.io/2014/08/11/graphical-address-generator/

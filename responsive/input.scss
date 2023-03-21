@@ -1,0 +1,24 @@
+@import "responsive.scss";
+//@import "responsive.scss";와 동일
+
+body {
+    margin: 0;
+
+    background-color: lightpink;
+
+    // 사용할때는 다음과 같이 사용
+    @include responsive("tablet") {
+        background-color: red;
+    }
+    @include responsive("laptop") {
+        background-color: blue;
+    }
+    @include responsive("pc") {
+        background-color: deeppink;
+    }
+}
+h1 {
+    @include responsive("tablet") {
+        color: white;
+    }
+}

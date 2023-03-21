@@ -1,0 +1,22 @@
+$tablet: 768px;
+$laptop: 1024px;
+$pc: 1280px;
+
+// 반응형 만들어 주기
+@mixin responsive($device) {
+    // 3가지의 분기를 나눠주면 됌
+
+    @if $device == "tablet" {
+        @media (min-width: $tablet) {
+            @content;
+        }
+    } @else if $device == "laptop" {
+        @media (min-width: $laptop) {
+            @content;
+        }
+    } @else if $device == "pc" {
+        @media (min-width: $pc) {
+            @content;
+        }
+    }
+}

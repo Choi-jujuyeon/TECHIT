@@ -1,0 +1,17 @@
+/* Error: Expected identifier.
+ *    ,
+ * 28 |     $:nth-child(2) {
+ *    |      ^
+ *    '
+ *   04-input.scss 28:6  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a    \2577 \a 28 \2502      $:nth-child(2) {\d\a    \2502       ^\a    \2575 \a   04-input.scss 28:6  root stylesheet";
+}

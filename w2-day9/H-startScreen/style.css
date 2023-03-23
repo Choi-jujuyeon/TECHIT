@@ -1,0 +1,65 @@
+body {
+  margin: 0px;
+}
+
+.back {
+  background-image: url("https://source.unsplash.com/category/nature/1600x900");
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .time {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.3rem;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+main .quotes {
+  position: relative;
+}
+main .quotes .quotesAddBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+main .newQuotes {
+  display: none;
+}
+
+.H {
+  color: #ff2dff;
+  font-family: "Climate Crisis", cursive;
+}
+
+.M {
+  color: yellow;
+  font-family: "Climate Crisis", cursive;
+}
+
+.S {
+  color: #2112e6;
+  font-family: "Climate Crisis", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+강제로 회복을 해줘야 한다.
+
+step 1. git log --oneline
+commit 번호가 나온다 !
+
+step 2. git reset --hard (504ea9c: 잘못 올라간 commit 번호 작성)
+
+step 3. git push -f origin main
+
+
+//
+git clone

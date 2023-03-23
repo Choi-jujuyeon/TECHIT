@@ -1,0 +1,21 @@
+{
+    "name": "JU",
+    "description": "Pre Programmer",
+    "age": "23",
+    "image": "https://이미지 경로 ",
+    "attributes": {
+        "name": "h662",
+        "description": "Good Person",
+        "image": "https://이미지 경로",
+        "attributes": [
+            {
+                "trait_type": "BACKGROUND",
+                "value": "Aquamarien"
+            },
+            {
+                "trait_type": "EARRING",
+                "value": "Silver Hoop"
+            }
+        ]
+    }
+}

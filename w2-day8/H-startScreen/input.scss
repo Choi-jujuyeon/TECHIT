@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    // background-color: black;
+    // color: yellowgreen;
+}
+// .bgVideo {
+//     // 절대값으로 위치를 정해준다!
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     object-fit: cover;
+// }
+.back {
+    background-image: url("https://source.unsplash.com/category/nature/1600x900");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: fixed;
+    // z가 들어가면 3차원을 생각해주면 된다
+    z-index: 2;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    // 열대로 속성을 넣어줄 것이다
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .time {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 0.3rem;
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 300;
+
+        // #T {
+        //     color: #4285f4;
+        // }
+        // // div {
+        // //     h1 span:nth-child(1) {
+        // //         /* position: absolute; */
+        // //         color: #4285f4;
+        // //         width: 45px;
+        // //         height: 105px;
+        // //         /* left: 478px;
+        // // top: 232px;  */
+        // //     }
+    }
+}
+
+.H {
+    color: #ff2dff;
+    font-family: "Climate Crisis", cursive;
+}
+.M {
+    color: yellow;
+    font-family: "Climate Crisis", cursive;
+}
+.S {
+    color: #2112e6;
+    font-family: "Climate Crisis", cursive;
+}

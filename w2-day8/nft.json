@@ -1,0 +1,55 @@
+{
+    "name": "h662",
+    "description": "Good Person",
+    "image": "https://이미지 경로",
+    "attributes": [
+      {
+        "trait_type": "BACKGROUND",
+        "value": "Aquamarien"
+      },
+      {
+        "trait_type": "EARRING",
+        "value": "Silver Hoop"
+      }
+    ]
+  }
+
+
+{
+    "Title": "The beauty of Korea without fine dust",
+    "Artist": "RoRA",
+
+    "image": "https://postfiles.pstatic.net/MjAyMzAzMjJfNDkg/MDAxNjc5NDUzNDgwMDUz.BNMD7a7ibZTg1mBQsgZGCgwjHLpBOmNygOIJJC1_u1Ag.LpqEQz5TyeokfAYbgV0JWkH29Jm3s0nZfRP8mpTEwgcg.JPEG.chlwndus1216/B1805687-CAF7-4FED-919B-E30EB156BC8D.jpeg?type=w966",
+    "attributes": [
+        {
+            "Location": "Gyeongju, South Korea",
+            "Weather": "a clear sky without fine dust"
+        }
+    ],
+
+    "Dates": [{ "Created": "2022년 10월 28일" }]
+}
+"Title": "The discovery of Recycling",
+    "Artist": "RoRA",
+{
+    "name": "RoRA",
+    "description": "The discovery of Recycling",
+
+    "image": "file:///C:/Users/juyeo/Downloads/nft%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0.png",
+    "attributes": [
+        {
+            "trait_type": "Circle1",
+            "value": "#B40EC4"
+        },
+        {
+            "trait_type": "Circle2",
+            "value": "#FE2BB3"
+        },
+        {
+            "trait_type": "Circle3",
+            "value": " #5D0046"
+        }
+    ],
+
+    "Dates": [{ "Created": "2023. 02. 07" }]
+}

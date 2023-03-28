@@ -15,7 +15,7 @@ step3. 'git init' 작성
         .gitignore : github에 업로드되면 안되는 파일들을 작성하는 페이지이다.
                  ( ex.대용량 dependency 패키지들, 실행파일들, private key 등 )
 
-tstep4. git add . 작성
+step4. git add . 작성
 step5. git commit -m "first commit" 작성 ()
 
 step6. git branch -M main 작성

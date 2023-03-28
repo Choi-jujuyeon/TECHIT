@@ -1,0 +1,126 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0px;
+}
+
+.back {
+  background-image: url("https://source.unsplash.com/category/nature/1600x900");
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .time {
+  background-color: rgba(253, 59, 211, 0.068);
+  padding: 0.3rem;
+  font-size: 60px;
+  font-family: "Climate Crisis";
+  color: rgb(255, 200, 243);
+  font-size: 50px;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.281);
+}
+main .quotes {
+  position: relative;
+}
+main .quotes .quotesAddBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+main .newQuotes {
+  display: none;
+}
+main .search .searchLogo {
+  width: 32px;
+  height: 32px;
+  animation: spin 20s linear infinite;
+}
+main .searchResult {
+  display: none;
+}
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+main .nft img {
+  width: 256px;
+  height: 256px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  width: 256px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .nft .nftHover a {
+  color: white;
+}
+main .nft .nftHover button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -8px;
+  border-radius: 9999px;
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .nftView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  display: none;
+}
+
+.H {
+  color: #34ff8f;
+  font-family: "Climate Crisis", cursive;
+  font-size: 80px;
+}
+
+.M {
+  color: rgb(247, 247, 95);
+  font-family: "Climate Crisis", cursive;
+  font-size: 80px;
+}
+
+.S {
+  color: #40e7fd;
+  font-family: "Climate Crisis", cursive;
+  font-size: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */

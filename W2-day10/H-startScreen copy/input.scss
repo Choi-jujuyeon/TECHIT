@@ -1,0 +1,173 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    margin: 0px;
+    // background-color: black;
+    // color: yellowgreen;
+}
+// .bgVideo {
+//     // 절대값으로 위치를 정해준다!
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100vw;
+//     height: 100vh;
+//     object-fit: cover;
+// }
+.back {
+    background-image: url("https://source.unsplash.com/category/nature/1600x900");
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: fixed;
+    // z가 들어가면 3차원을 생각해주면 된다
+    z-index: 2;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    // 열대로 속성을 넣어줄 것이다
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .time {
+        background-color: rgba(253, 59, 211, 0.068);
+        padding: 0.3rem;
+
+        font-size: 60px;
+        // font-family: "Source Sans Pro", sans-serif;
+        font-family: "Climate Crisis";
+        color: rgb(255, 200, 243);
+        font-size: 50px;
+        // font-weight: 300;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.281);
+    }
+    .quotes {
+        position: relative;
+
+        .quotesAddBtn {
+            display: none;
+
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        &:hover {
+            .quotesAddBtn {
+                display: inline-block;
+            }
+        }
+    }
+    .newQuotes {
+        display: none;
+    }
+
+    .search {
+        .searchLogo {
+            width: 32px;
+            height: 32px;
+
+            animation: spin 20s linear infinite;
+        }
+    }
+
+    .searchResult {
+        display: none;
+    }
+
+    .nft {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 24px;
+
+        img {
+            width: 256px;
+            height: 256px;
+        }
+
+        .nftHover {
+            position: absolute;
+            display: none;
+            width: 256px;
+            height: 256px;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            a {
+                color: white;
+            }
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: -8px;
+                border-radius: 9999px;
+            }
+        }
+
+        &:hover {
+            .nftHover {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .nftView {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 24px;
+        display: none;
+    }
+}
+
+.H {
+    color: #34ff8f;
+    font-family: "Climate Crisis", cursive;
+    font-size: 80px;
+}
+.M {
+    color: rgb(247, 247, 95);
+    font-family: "Climate Crisis", cursive;
+    font-size: 80px;
+}
+.S {
+    color: #40e7fd;
+    font-family: "Climate Crisis", cursive;
+    font-size: 80px;
+}
+
+// .search {
+//     .searchLogo {
+//         width: 32px;
+//         height: 32px;
+
+//         // animation: spin 1s infinite
+//         animation: spin 2s linear infinite;
+//     }
+
+//     .searchResult {
+//         display: none;
+//     }
+// }

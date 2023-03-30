@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.main {
+    background-color: aqua;
+}
+
+.main {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 24px;
+    font-weight: 600;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 4px;
+}

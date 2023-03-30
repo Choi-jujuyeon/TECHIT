@@ -26,3 +26,9 @@ step7. git remote add origin [자신의 깃헙 주소]
 step8. git remote -v
 
 step9. git push -u origin main
+
+
+//만약 다른  repository에 올리려고 하는데 오류가 발생할 결우우
+git remote remove origin
+git remote add origin [새롭게 연결할 깃 레파지토리 주소] 명령어
+
